@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+/* header */
+
+.top-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    
+}
+
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-bar ul a {
+    text-decoration: none;
+    color: black;
+    padding: 1vw; 
+}
+
+.nav-bar ul a:hover {
+    color: #787878;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+ 
+.nav-bar ul a.active {
+    color: #787878;
+    font-weight: bold;
+}
+
+
+
+
+/* background imag */
+
+.background-image {
+    background-image: url('../img/background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    position: relative;
+}
+
+.background-image2 {
+    background-image: url('../img/background-image2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    position: relative;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.overlay-text h1 {
+    font-size: 3em;
+    margin: 0;
+}
+.overlay-text h1 span{
+    color:#3f3f3f
+}
+.overlay-text p {
+    font-size: 1.5em; 
+    text-align:left;
+}
+
+.background-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+.background-image2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+/* about us index page*/
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    margin-left: 10%;
+    font-size: 1.5em;
+}
+
+.about-us img {
+    
+    width: 60%;
+}
+
+
+.about-us button:hover {
+    background-color: #3f3f3f;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+/* floating image */
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Apply the animation to the image */
+.floating-logo {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* services index page */
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+.services h2 {
+    font-size: 2em;
+    margin-top: 2%;
+    text-align: center;
+
+
+
+}
+
+.services p {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+
+
+.services ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 2%;
+    font-size: 1.5em;
+}
+.services li {
+    list-style: none;
+    padding: 2%;
+}
+
+/* about us page */
+
+
+.aboutus-page img{
+    width: 50%;
+    margin-left: 25%;
+}
+.aboutus1 {
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+    color: black;
+    background-color: white;
+    font-size: 1.5em;
+}
+
+.aboutus2 {
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+    color: white;
+    background-color: black;
+    font-size: 1.5em;
+}
+
+/* services page */
+.services-page{
+    font-size: 1.2em;
+}
+.services-page h1 {
+    font-size: 2em;
+    margin-top: 2%;
+    text-align: center;
+
+}
+/* service 1 */
+.service1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+
+}
+
+.service1 img {
+    width: 10%;
+    border-radius: 20px;
+}
+
+/* service 2 */
+.service2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    background-color: black;
+    color: white;
+    
+
+}
+
+.service2 img {
+    width: 10%;
+    border-radius: 20px;
+}
+
+/* service 3 */
+.service3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    
+
+}
+
+.service3 img {
+    width: 10%;
+    border-radius: 20px;
+}
+
+
+/* contact page */
+.contact h1 {
+    font-size: 2em;
+    margin-top: 2%;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 1.5em;
+    margin-top: 2%;
+    text-align: center;
+}
+
+.contact-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    background-color: #ffffff; 
+    color: rgb(0, 0, 0); 
+
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form input {
+    padding: 5%;
+    margin: 1%;
+    width: 100%;
+    border-radius: 20px;
+    outline: none;
+}
+
+.contact-form textarea {
+    padding: 5%;
+    margin: 1%;
+    width: 100%;
+    border-radius: 20px;
+    outline: none;
+}
+
+.contact-form button {
+    margin-top: 10%;
+    padding: 5%;
+    background-color: #202020; 
+    color: white; 
+    border: none;
+    border-radius: 30px;
+    font-size: 1em; 
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #3f3f3f;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.contact-info {
+    
+    justify-content: space-around;
+    text-align: center;
+    padding: 2%;
+    background-color: #000000; 
+    color: rgb(255, 255, 255); 
+}
+
+
+
+/* footer */
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    background-color: #ffffff; 
+    color: rgb(0, 0, 0); 
+}
+
+.footer-about {
+    margin-right: 25%;
+}
+
+/* btn style */
+
+.btn {
+    display: inline-block;  
+    padding: 2%;       
+    font-size: 1em;            
+    color: #fff;               
+    background-color: #000000;   
+    border: none;                 
+    border-radius: 20px;         
+    text-align: center;        
+    text-decoration: none;        
+    cursor: pointer;             
+    transition: background-color 0.3s ease; 
+}
+
+.btn:hover {
+    background-color: #595959;    
+
+}
+
